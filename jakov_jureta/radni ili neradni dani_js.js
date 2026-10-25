@@ -1,4 +1,7 @@
-switch (new Date().getDay()) {
+const dan=(new Date().getDay());
+let day;
+let vrstaDana;
+switch (dan) {
   case 0:
     day = "nedjelja";
     break;
@@ -21,3 +24,17 @@ switch (new Date().getDay()) {
     day = "subota";
 }
 
+if(dan >=1 && dan<=5){
+    vrstaDana="radni dan";
+} else {
+    vrstaDana="neradni dan";
+}
+console.log(day);
+console.log(vrstaDana);
+if(day==="ponedjeljak"){
+    console.log("Ja najviše volim JS od svih programskih jezika");
+} else if(day==="četvrtak"){
+    console.log("Mali petak!");
+} else if(day==="petak"){
+    console.log("Vikend na Vidiku!");
+}
